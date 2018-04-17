@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article}
+    \usepackage{minted}
+    \usepackage{xcolor}
+    \usepackage[colorlinks,linkcolor=black]{hyperref}
+    \usepackage[margin=1in]{geometry}
+    \usepackage{caption}
+    \usepackage{graphicx, subfig}
+    \usepackage{float}
+    \definecolor{bg}{rgb}{0.9,0.9,0.9}
+    \usemintedstyle{manni}
+    \setminted{
+    linenos,
+    autogobble,
+    breaklines,
+    breakautoindent,
+    bgcolor=bg,
+    numberblanklines=false，
+    }
+
+\begin{document}
+    \tableofcontents
+    \newpage
+    \section{Section}
+        \subsection{Subsection}
+            \begin{minted}{php}
+<?php
+if(isset($_GET['authorname'])){
+    //omitted
+}else{
+    echo "<div id='noResult'>Invalid Author Name!</div>";
+}
+?>
+            \end{minted}
+        \subsection{Subsection}
+            \begin{figure}[H]
+            \centering
+            \includegraphics[width=.8\textwidth]{img/1.png}
+            \caption{Home}
+            \end{figure}
+        \subsection{Subsection}
+    \section{Section}
+        \subsection{Subsection}
+        \subsection{Subsection}
+\end{document}
