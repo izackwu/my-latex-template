@@ -1,0 +1,77 @@
+%-- coding: UTF-8 --
+%!TEX program = Xelatex
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[UTF8]{ctex}
+\usepackage[english]{babel} % comment this if you want "more" Chinese
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\newcommand\course{CS000 某课程}
+\newcommand\semester{Fall 2019}
+\newcommand\hwnumber{1}                 % <-- ASSIGNMENT #
+\newcommand\StudentName{Keith Null}           % <-- YOUR Name
+\newcommand\StudentID{000000000}           % <-- STUDENT ID #
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\StudentName \\ \StudentID}                 
+\chead{\textbf{\Large Assignment \hwnumber}}
+\rhead{\course \\ \semester}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+\begin{document}
+    \section*{Part 1}
+        \subsection*{Question 1.3}
+            \begin{proof}
+                Okay, I can prove this.
+            \end{proof}
+        \subsection*{Question 1.7}
+            if $x = 1$, then we have
+            \begin{align*}
+                f(x) & = x^2 + 2x + 1\\
+                      & = (x + 1)^2\\
+                      & = 4^{\log_2{(x + 1)}}\\
+                      & = 4^1\\
+                      & = 4
+            \end{align*}
+            Done!
+    \newpage
+    \section*{Part 2}
+        \subsection*{Question 4.2}
+            This question has multiple subquestions:
+            \begin{enumerate}[a.]
+                \item This one is trival. I can do it in $O(n)$ time.
+                \item Ummm, this is also not difficult.
+                \item Oh no, I can't figure this out at all!
+            \end{enumerate}
+        \subsection*{Question 4.7}
+            Let me solve this one in Chinese. \\
+            让我用中文来解答这道题目。
+\end{document}
