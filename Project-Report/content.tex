@@ -20,12 +20,16 @@
     bgcolor=bg,
     numberblanklines=false，
     }
+    \usepackage[UTF8]{ctex}
+    \usepackage[english]{babel} % comment this line you want "more" Chinese
 
 \begin{document}
     \tableofcontents
     \newpage
     \section{Section}
         \subsection{Subsection}
+            Some code here.
+            这里有一些代码。
             \begin{minted}{php}
 <?php
 if(isset($_GET['authorname'])){
@@ -36,6 +40,8 @@ if(isset($_GET['authorname'])){
 ?>
             \end{minted}
         \subsection{Subsection}
+            Insert an image here.
+            这里插入一张图片。
             \begin{figure}[H]
             \centering
             \includegraphics[width=.5\textwidth]{img/example.png}

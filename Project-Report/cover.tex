@@ -1,3 +1,4 @@
+% !TeX program = xelatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Multi-Purpose Large Font Title Page
 % LaTeX Template
@@ -29,7 +30,6 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[10pt]{article}
 
 \usepackage[a4paper, left=2cm, right=2cm]{geometry} % A4 paper size and thin margins
@@ -41,6 +41,8 @@
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage[sfdefault]{ClearSans} % Use the Clear Sans font (sans serif)
 %\usepackage{XCharter} % Use the XCharter font (serif)
+\usepackage[UTF8]{ctex}
+\usepackage[english]{babel} % comment this line you want "more" Chinese
 
 \begin{document}
 
@@ -61,9 +63,9 @@
 				\fontsize{50pt}{80pt}\selectfont % Title font size, the first argument is the font size and the second is the line spacing, adjust depending on title length
 				\vspace{0.7cm} % Space between the start of the title and the top of the grey box
 
-				A Title Page\\
-				Template With\\
-				Many Uses\\
+				支持中文的\\
+				多用途\\
+				封面模板\\
 
 				\vspace{0.7cm} % Space between the end of the title and the bottom of the grey box
 			}
